@@ -1,0 +1,27 @@
+{
+  "name": "where-is-toilet",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.8.1",
+    "axios": "^0.27.2",
+    "babel-plugin-styled-components": "^2.0.7",
+    "next": "12.1.5",
+    "open-color": "^1.9.1",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "react-redux": "^8.0.1",
+    "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "eslint": "8.14.0",
+    "eslint-config-next": "12.1.5"
+  },"homepage": "http://johtta88.github.io/where-is-toilet"
+}
