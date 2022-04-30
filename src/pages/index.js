@@ -10,7 +10,7 @@ export default function Home({ toilet }) {
 }
 
 export async function getStaticProps() {
-  const res = await axios.post("http://localhost:4000/api/map");
+  const res = await axios.post("https://where-is-toilet.herokuapp.com/api/map");
   const toilet = res.data;
   return {
     props: { toilet },
